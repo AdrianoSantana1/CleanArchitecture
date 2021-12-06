@@ -12,8 +12,9 @@ namespace CleanArchMVC.Domain.Entities
            ValidateDomain(name);
         }
 
-        public Category(string name, int id)
+        public Category(int id, string name)
         {
+            ValidateDomain(name);
             Name = name;
             id = Id;
         }

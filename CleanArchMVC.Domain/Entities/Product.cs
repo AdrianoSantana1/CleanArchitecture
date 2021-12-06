@@ -90,7 +90,7 @@ namespace CleanArchMVC.Domain.Entities
             );
 
             DomainExceptValidation.When(
-                image.Length > 250,
+                image?.Length > 250,
                 "Invalid image name url"
             );
 
